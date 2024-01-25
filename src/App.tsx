@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState<MyData[]>([]);
 
   function fetching() {
-    fetch('http://localhost:5500/sherehe', {
+    fetch('https://sherehe-api.onrender.com/sherehe', {
       method: 'GET',
       headers: {
         'Content-type': 'Application/json',

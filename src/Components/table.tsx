@@ -49,7 +49,7 @@ const Table: React.FC<TableProps> = ({ myData, setMyData,func }) => {
   
     async function handleSave(id: number | null) {
       try {
-        const response = await fetch(`http://localhost:5500/sherehe/${id}`, {
+        const response = await fetch(`https://sherehe-api.onrender.com/sherehe/${id}`, {
           method: 'PATCH',
           headers: {
             'Content-type': 'application/json',
@@ -76,7 +76,7 @@ const Table: React.FC<TableProps> = ({ myData, setMyData,func }) => {
   
     async function handleDelete(id: number | null) {
       try {
-        const response = await fetch(`http://localhost:5500/sherehe/${id}`, {
+        const response = await fetch(`https://sherehe-api.onrender.com/sherehe/${id}`, {
           method: 'DELETE',
         });
   
@@ -95,7 +95,7 @@ const Table: React.FC<TableProps> = ({ myData, setMyData,func }) => {
   
     async function handleAddUser() {
       try {
-        const response = await fetch('http://localhost:5500/sherehe', {
+        const response = await fetch('https://sherehe-api.onrender.com/sherehe', {
           method: 'POST',
           headers: {
             'Content-type': 'application/json',
